@@ -1,0 +1,96 @@
+#N canvas 484 176 721 322 10;
+#N canvas 524 199 858 421 One-to-One connections 0;
+#N canvas 0 50 886 362 one to one with mouse on inlet 0;
+#X obj 41 63 unpack f f f;
+#X obj 150 63 unpack f f;
+#X obj 240 63 symbol;
+#X obj 304 63 route a b c d e;
+#X obj 148 173 print;
+#X text 439 35 1) select all of those;
+#X text 491 65 <------;
+#X text 442 101 2) press the ' (apostrophe) key to activate PD ConnectHack
+, f 29;
+#X text 441 204 4) press shift+1;
+#X text 532 226 Alternatively you can press shift+3 to see what happens
+, f 22;
+#X text 442 291 5) watch the magic;
+#X text 442 158 3) put your mouse over the [print] inlet. Make sure
+it is precisely over the black pixels!, f 51;
+#X restore 57 133 pd one to one with mouse on inlet;
+#N canvas 0 50 964 385 one to one with mouse on outlet 0;
+#X obj 240 213 symbol;
+#X obj 304 213 route a b c d e;
+#X text 437 214 <------;
+#X text 522 81 2) press the ' (apostrophe) key to activate PD ConnectHack
+, f 35;
+#X text 522 271 5) watch the magic;
+#X obj 148 43 trigger a a a a;
+#X text 519 34 1) select all of the objects indicated by the arrow
+;
+#X text 522 137 3) put your mouse over any of [trigger]'s inlets. Make
+sure it is precisely over the black pixels!, f 51;
+#X text 521 184 4) press ctrl+1;
+#X obj 41 213 pack f f f;
+#X obj 150 213 pack f f;
+#X text 612 206 Alternatively you can press shift+2 to see what happens
+, f 22;
+#X restore 57 163 pd one to one with mouse on outlet;
+#X text 439 49 Remember the following diagram;
+#X text 416 91 [shift];
+#X text 411 90 |||||||||||, f 1;
+#X text 414 222 ______________________________________________;
+#X text 417 75 ______________________________________________;
+#X text 741 90 |||||||||||, f 1;
+#X obj 429 150 cnv 15 25 25 empty empty float 20 12 0 60 -262144 -66577
+0;
+#X text 433 281 If your mouse is over an inlet \, use shift. If your
+mouse is over an outlet \, use ctrl., f 42;
+#X text 420 218 [ctrl];
+#X restore 60 84 pd One-to-One connections;
+#X obj 41 26 cnv 15 25 25 empty empty PD ConnectHack help patch
+20 12 0 30 -262144 -66577 0;
+#N canvas 524 199 852 393 all<->one connections 0;
+#X text 439 49 Remember the following diagram;
+#X text 416 91 [shift];
+#X text 420 218 [ctrl];
+#X text 411 90 |||||||||||, f 1;
+#X text 414 222 ______________________________________________;
+#X text 417 75 ______________________________________________;
+#X text 741 90 |||||||||||, f 1;
+#X obj 429 150 cnv 15 25 25 empty empty float 20 12 0 60 -262144 -66577
+0;
+#X text 433 281 If your mouse is over an inlet \, use shift. If your
+mouse is over an outlet \, use ctrl., f 42;
+#N canvas 0 50 844 334 alll to one with mouse on inlet 0;
+#X obj 41 63 unpack f f f;
+#X obj 150 63 unpack f f;
+#X obj 240 63 symbol;
+#X obj 304 63 route a b c d e;
+#X text 439 35 1) select all of those;
+#X text 491 65 <------;
+#X text 442 101 2) press the ' (apostrophe) key to activate PD ConnectHack
+, f 34;
+#X text 442 241 5) watch the magic;
+#X text 441 204 4) press shift+a;
+#X obj 112 211 pack float symbol symbol;
+#X text 442 158 3) put your mouse over any of the [pack]'s inlets.
+Make sure it is precisely over the black pixels!, f 51;
+#X restore 57 133 pd alll to one with mouse on inlet;
+#N canvas 0 50 928 375 one to all with mouse on outlet 0;
+#X text 387 214 <------;
+#X text 522 81 2) press the ' (apostrophe) key to activate PD ConnectHack
+, f 35;
+#X text 522 231 5) watch the magic;
+#X text 519 34 1) select all of the objects indicated by the arrow
+;
+#X obj 41 213 pack f f f;
+#X obj 150 213 pack f f;
+#X obj 148 43 unpack f f f f;
+#X obj 240 213 route a b c d e;
+#X text 521 184 4) press ctrl+a;
+#X text 522 137 3) put your mouse over any of [unpack]'s outlets. Make
+sure it is precisely over the black pixels!, f 51;
+#X restore 57 163 pd one to all with mouse on outlet;
+#X restore 60 114 pd all<->one connections;
+#X text 282 257 This patch is used to demonstrate the feature of the
+PD ConnectHack software.;
