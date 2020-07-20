@@ -3,7 +3,7 @@
 
 ## IMPORTANT NOTE
 
-**THIS SOFTWARE IS OBSOLETE**
+❌**THIS SOFTWARE IS OBSOLETE**❌
 
 Please see the _What is this? section_ for further details
 
@@ -14,7 +14,7 @@ Check the [releases page](https://github.com/HenriAugusto/PureData-ConnectHack/r
 ## What is this?
 It's an autohotkey script (thus Windows only) that makes object connections for you in pure data.
 
-[demo](https://media.giphy.com/media/3o85xGNiioOzjhUwIE/giphy.gif)
+![demo](https://media.giphy.com/media/3o85xGNiioOzjhUwIE/giphy.gif)
 
 I've started this project about 2~3 years ago and it was in an almost-ready state since then. Just when i found some time to finally finish and release it, on the same **day**... 
 
